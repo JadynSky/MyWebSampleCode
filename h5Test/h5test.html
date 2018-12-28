@@ -1,0 +1,498 @@
+<!-- 声明为html5 -->
+<!DOCTYPE html>
+<!-- 定义一个html文档 -->
+<html lang="en">
+<!-- 定义关于html文档的信息 -->
+<head>
+    <!-- meta用来定义html文档的元信息 -->
+    <!-- 定义文档的编码方式 UTF-8代表 Unicode 字符编码  ISO-8859-1代表 拉丁字母表 字符编码-->
+    <meta charset="UTF-8"> 
+    <!-- name属性用来描述网页 对应的值为content -->
+    <!-- keywords用来告诉搜索引擎网页的关键字 -->
+    <meta name="keywords" content="学习,study,html5,css,html,css3,js,javascript,前端">
+    <!-- description用来告诉搜索引擎网页的主要内容，在搜索引擎列表的小字显示 -->
+    <meta name="description" content="一个学习html5、CSS3和Javascript的网站，这里有我练习用的代码。">
+    <!-- author用来规定文档作者的名字 -->
+    <meta name="author" content="wuzhongtian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- http-equiv属性对应的是key，content属性对应的是value -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 链接外部的样式文件 -->
+    <link rel="stylesheet" href="./style.css">
+    <title>HTML5练习</title>
+</head>
+<body>
+    <div id="top">
+        <header>
+            <h1>HTML5练习</h1>
+            <p>一个学习html5、CSS3和Javascript的网站，这里有我练习用的代码。</p>
+        </header>
+        <div id="catalog">
+            <h1>目录</h1>
+            <ul>
+                <li><a href="#格式">格式</a></li>
+                <li><a href="#列表">列表</a></li>
+                <li><a href="#表格">表格</a></li>
+                <li><a href="#多媒体">多媒体</a></li>
+                <li><a href="#图像">图像</a></li>
+                <li><a href="#表单">表单</a></li>
+                <li><a href="#框架">框架</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <article id="格式">
+                <header>
+                    <h1>格式</h1>
+                </header>
+                <h1>标题h1</h1>
+                <h2>标题h2</h2>
+                <h3>标题h3</h3>
+                <h4>标题h4</h4>
+                <h5>标题h5</h5>
+                <h6>标题h6</h6>
+                <p>普通文字里的<b>一段加粗文字</b></p>
+                <p>一个<abbr title="HyperText Markup Language">HTML</abbr>缩写，鼠标指住有解释</p>
+                <p>这句<del>化</del>话里有一个错别字</p>
+                <p><i>这句话斜了</i></p>
+                <p><kbd>这句话是键盘文本，一般用CSS不用这个</kbd></p>
+                <p><sub>这句话被下标了。</sub>这句话是正常的。<sup>这句话被上标了。</sup></p>
+                <p><u>这句话被加下划线了</u></p>
+                <p><a href="http://www.baidu.com">target为_self链接（默认）</a></p>
+                <p><a href="http://www.baidu.com" target="_blank">target为_blank链接</a></p>
+                <p><a href="http://www.baidu.com" target="_parent">target为_parent链接</a></p>
+                <p><a href="http://www.baidu.com" target="_top">target为_top链接</a></p>
+                <footer>
+                    <p>点击这里回到顶部<a href="#top">[top]</a></p>
+                </footer>
+            </article>
+            <article id="列表">
+                <header>
+                    <h1>列表</h1>
+                </header>
+                <h3>一个自定义列表</h3>
+                <dl>
+                    <dt>自定义列表的项目1</dt>
+                    <dd>自定义列表的描述1</dd>
+                    <dt>自定义列表的项目2</dt>
+                    <dd>自定义列表的描述2</dd>
+                    <dt>自定义列表的项目3</dt>
+                    <dd>自定义列表的描述3</dd>
+                </dl>
+                <h3>一个无序列表</h3>
+                <ul>
+                    <li>无序列表第一条</li>
+                    <li>无序列表第二条</li>
+                    <li>无序列表第三条</li>
+                </ul>
+                <h3>一个有序列表</h3>
+                <ol>
+                    <li>有序列表第一条</li>
+                    <li>有序列表第二条</li>
+                    <li>有序列表第三条</li>
+                </ol>
+
+                <footer>
+                    <p>点击这里回到顶部<a href="#top">[top]</a></p>
+                </footer>
+            </article>
+            <article id="表格">
+                <header>
+                    <h1>表格</h1>
+                </header>
+                <!-- 定义一个表格 -->
+                <table>
+                    <caption>表格的标题</caption>
+                    <colgroup>
+                        <col span="2" style="color: blue;">
+                        <col style="color: red;">
+                        <col span="2" style="color: gray;">
+                    </colgroup>
+                    <!-- 定义表头内容 -->
+                    <thead>
+                        <tr>
+                            <th>第一列表头</th>
+                            <th>第二列表头</th>
+                            <th>第三列表头</th>
+                            <th>第四列表头</th>
+                            <th>第五列表头</th>
+                        </tr>
+                    </thead>
+                    <!-- 定义表脚注的内容 -->
+                    <tfoot>
+                        <tr>
+                            <td>第一列表脚注</td>
+                            <td>第二列表脚注</td>
+                            <td>第三列表脚注</td>
+                            <td>第四列表脚注</td>
+                            <td>第五列表脚注</td>
+                        </tr>
+                    </tfoot>
+                    <!-- 定义表内容 -->
+                    <tbody>
+                        <tr>
+                            <td>第一列第一行表内容</td>
+                            <td>第二列第一行表内容</td>
+                            <td>第三列第一行表内容</td>
+                            <td>第四列第一行表内容</td>
+                            <td>第五列第一行表内容</td>
+                        </tr>
+                        <tr>
+                            <td>第一列第二行表内容</td>
+                            <td>第二列第二行表内容</td>
+                            <td>第三列第二行表内容</td>
+                            <td>第四列第二行表内容</td>
+                            <td>第五列第二行表内容</td>
+                        </tr>
+                        <tr>
+                            <td>第一列第三行表内容</td>
+                            <td>第二列第三行表内容</td>
+                            <td>第三列第三行表内容</td>
+                            <td>第四列第三行表内容</td>
+                            <td>第五列第三行表内容</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                <footer>
+                    <p>点击这里回到顶部<a href="#top">[top]</a></p>
+                </footer>
+            </article>
+            <article id="多媒体">
+                <header>
+                    <h1>Media</h1>
+                </header>
+                <h3>音频</h3>
+                <p><audio src="./testAudio.mp3" type="audio/mpeg" controls></audio></p>
+                <h3>视频</h3>
+                <p><video src="./testVideo.mp4" type="video/mp4" controls></video></p>
+                <footer>
+                    <p>点击这里回到顶部<a href="#top">[top]</a></p>
+                </footer>
+            </article>
+            <article id="图像">
+                <header>
+                    <h1>图像</h1>
+                </header>
+                <h3>被加了map的普通图</h3>
+                <img src="http://placekitten.com/480/480" alt="我是一张图片" width="600" height="600" usermap="#mapName1">
+                <map name="planetmap">
+                    <area shape="rect" coords="0,0,100,200" href="http://www.runoob.com/images/up.gif" alt="链接1">
+                    <area shape="circle" coords="105,205,5" href="http://www.runoob.com/images/up.gif" alt="链接2">
+                    <area shape="poly" coords="110,210,115,215,120,200,115,250" href="http://www.runoob.com/images/up.gif" alt="链接3">
+                </map>
+                <h3>figure / figcaption</h3>
+                <!-- figure是独立的流内容  figcaption是figure元素的标题 -->
+                <p>一个没有figcaption的figure</p>
+                <figure>
+                    <img src="http://placekitten.com/480/480" alt="一张图片">
+                </figure>
+                <p>一个带figcaption的figure</p>
+                <figure>
+                    <figcaption>
+                        <p>我是figcaption的文字</p>
+                    </figcaption>
+                    <img id="img1" src="http://placekitten.com/480/480" alt="一张图片">
+                </figure>
+                <h3>canvas</h3>
+                <figure>
+                    <figcaption>
+                        <p>fillStyle填充的矩形</p>
+                    </figcaption>
+                    <canvas id="myCanvasFill1" width="100" height="100" style="border:1px solid gray;">如果浏览器不支持canvas，这句话就会被显示出来</canvas>
+                    <canvas id="myCanvasFill2" width="100" height="100" style="border:1px solid gray;">如果浏览器不支持canvas，这句话就会被显示出来</canvas>
+                    <canvas id="myCanvasFill3" width="100" height="100" style="border:1px solid gray;">如果浏览器不支持canvas，这句话就会被显示出来</canvas>
+                </figure>
+                <figure>
+                    <figcaption>
+                        使用js绘制的线条
+                    </figcaption>
+                    <canvas id="myCanvasLine1" width="100" height="100" style="background-color: #53aadd;border:1px solid gray;">如果浏览器不支持canvas，这句话就会被显示出来</canvas>
+                    <canvas id="myCanvasLine2" width="100" height="100" style="background-color: #53aadd;border:1px solid gray;">如果浏览器不支持canvas，这句话就会被显示出来</canvas>
+                </figure>
+                <figure>
+                    <figcaption>
+                        使用js绘制文字
+                    </figcaption>
+                    <canvas id="myCanvasText1" width="300" height="300" style="background-color: #53aadd;border:1px solid gray;">如果浏览器不支持canvas，这句话就会被显示出来</canvas>
+                    <canvas id="myCanvasText2" width="300" height="300" style="background-color: #53aadd;border:1px solid gray;">如果浏览器不支持canvas，这句话就会被显示出来</canvas>
+                </figure>
+                <figure>
+                    <figcaption>
+                        使用js绘制图像
+                    </figcaption>
+                    <canvas id="myCanvasImage1" width="300" height="300" style="background-color: #53aadd;border:1px solid gray;">如果浏览器不支持canvas，这句话就会被显示出来</canvas>
+                    <canvas id="myCanvasImage2" width="300" height="300" style="background-color: #53aadd;border:1px solid gray;">如果浏览器不支持canvas，这句话就会被显示出来</canvas>
+                </figure>
+                <figure>
+                    <figcaption>
+                        使用水滴波浪图
+                    </figcaption>
+                    <canvas id="canvas" style="background:#f5f5f5" width="600" height="600"></canvas>
+                </figure>
+                <footer>
+                    <p>点击这里回到顶部<a href="#top">[top]</a></p>
+                </footer>
+            </article>
+            <article id="表单">
+                <header>
+                    <h1>表单</h1>
+                </header>
+                <form action="form.html">
+                    <!-- 表单边框 -->
+                    <fieldset>
+                        <!-- fieldset标题 -->
+                        <legend>input fields</legend>
+                        <!-- label作为input元素的标注 for属性指向input元素的id -->
+                        <label for="textinput">Text Input: </label>
+                        <input type="text" id="textinput" placeholder="Text Input">
+                        <br>
+
+                        <label for="PasswordInput">Password Input:</label>
+                        <input type="Password" id="PasswordInput" placeholder="PasswordInput">
+                        <br>
+
+                        <label for="datetimeInput">datetime Input:</label>
+                        <input type="datetime" id="datetimeInput" placeholder="datetime Input">
+                        <br>
+                        
+                        <label for="emailInput">email Input:</label>
+                        <input type="email" id="emailInput" placeholder="email Input">
+                        <br>
+                        
+                        <label for="numberInput">number Input:</label>
+                        <!-- min为最小值  max为最大值 value为当前值 -->
+                        <input type="number" id="numberInput" placeholder="number Input" min="0" max="10" value="5">
+                        <br>
+
+                        <label for="searchInput">search Input:</label>
+                        <input type="search" id="searchInput" placeholder="search Input">
+                        <br>
+
+                        <label for="telInput">tel Input:</label>
+                        <input type="tel" id="telInput" placeholder="tel Input">
+                        <br>
+
+                        <label for="urlInput">url Input:</label>
+                        <input type="url" id="urlInput" placeholder="url Input">
+                        <br>
+
+                        <input type="submit" name="submitInput" value="提交">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <!-- 时间输入选择框 -->
+                        <legend>time input fields</legend>
+                        <p>date Input:<input type="date" name="dateInput"></p>
+                        <p>Time Input:<input type="Time" name="TimeInput"></p>
+                        <p>month Input:<input type="month" name="monthInput"></p>
+                        <p>week Input:<input type="week" name="week Input"></p>
+                        <input type="submit" name="submitInput" value="提交">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <!-- 颜色选择器 -->
+                        <legend>Color Input Fields</legend>
+                        <p>color Input:<input type="color" name="colorInput"></p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <!-- 复选框 -->
+                        <legend>Checkboxes</legend>
+                        <p><input type="CheckBox" id="checkbox1" checked>A</p>
+                        <p><input type="CheckBox" id="checkbox2">B</p>
+                        <p><input type="CheckBox" id="checkbox3">C</p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <!-- 文件选择器 -->
+                        <legend>File Input</legend>
+                        <p>file Input:<input type="file" name="fileInput"></p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <!-- 拖动选择器 -->
+                        <legend>range input</legend>
+                        <p>range Input:<input type="range" name="rangeInput" value="100"></p>
+                        <p>reset Input:<input type="reset" name="resetInput"></p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <!-- 选择器 -->
+                        <legend>select</legend>
+                        <select name="carSelect" id="select1" size="1">
+                            <optgroup label="美国">
+                                <option value="tesla" label="tesla"></option>
+                                <option value="ford" label="ford"></option>
+                                <option value="linkon" label="linkon"></option>
+                            </optgroup>
+                            <optgroup label="中国">
+                                <option value="nio" label="nio"></option>
+                                <option value="landwind" label="landwind"></option>
+                                <option value="BYD" label="BYD"></option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <!-- 输入框中的选择器 -->
+                        <legend>datalist</legend>
+                        <label for="datalistinput">datalist input:</label>
+                        <!-- 通过list指定datalist的id -->
+                        <input type="text" id="datalistinput" list="brows">
+                        <datalist id="brows">
+                            <option value="tesla" label="tesla"></option>
+                            <option value="ford" label="ford"></option>
+                            <option value="linkon" label="linkon"></option>
+                            <option value="nio" label="nio"></option>
+                            <option value="landwind" label="landwind"></option>
+                            <option value="BYD" label="BYD"></option>
+                        </datalist>
+                    </fieldset>
+                    <br>
+                    <fieldset oninput="x.value=parseInt(range1.value)+parseInt(text1.value)">
+                        <legend>output</legend>
+                        0<input type="range" id="range1" value="50">100 + <input type="text" id="text1" value="50"> = <output id="x">100</output>
+                    </fieldset>
+                </form>
+                <footer>
+                    <p>点击这里回到顶部<a href="#top">[top]</a></p>
+                </footer>
+            </article>
+            <article id="框架">
+                <header>
+                    <h1>框架</h1>
+                </header>
+                <iframe src="http://www.baidu.com" frameborder="1" height="200" width="300"></iframe>
+                <footer>
+                    <p>点击这里回到顶部<a href="#top">[top]</a></p>
+                </footer>
+            </article>
+        </div>
+    </div>
+
+
+    <script>
+        // 绘制myCanvasFill填充绘图
+        //myCanvasFill1 单颜色填充
+        //1. 获取canvas元素
+        var c1=document.getElementById('myCanvasFill1');
+        //2. 创建context对象
+        var ctx1=c1.getContext('2d');
+        //3. fillStyle=color|gradient|pattern;
+        ctx1.fillStyle='#53aadd';
+        ctx1.fillRect(0,0,100,100);
+        //myCanvasFill2 从上到下渐变填充
+        //1. 获取canvas元素
+        var c1=document.getElementById('myCanvasFill2');
+        //2. 创建context对象
+        var ctx1=c1.getContext('2d');
+        //3. 创建颜色梯度
+        var gradient1 = ctx1.createLinearGradient(0,0,0,100);
+        //4. 添加渐变点
+        gradient1.addColorStop(0,"black");
+        gradient1.addColorStop(0.5,"red");
+        gradient1.addColorStop(1,"white");
+        ctx1.fillStyle=gradient1;
+        ctx1.fillRect(0,0,100,100);
+
+        //myCanvasFill3 从左到右渐变填充
+        var c1=document.getElementById('myCanvasFill3');
+        //2. 创建context对象
+        var ctx1=c1.getContext('2d');
+        var gradient2 = ctx1.createLinearGradient(0,0,100,0);
+        gradient2.addColorStop(0,"black");
+        gradient2.addColorStop(0.5,"red");
+        gradient2.addColorStop(1,"white");
+        ctx1.fillStyle=gradient2;
+        ctx1.fillRect(0,0,100,100);
+        
+
+        // 绘制myCanvasLine
+        // 绘制myCanvasLine1
+        var c2=document.getElementById('myCanvasLine1');
+        var ctx2=c2.getContext('2d');
+        ctx2.moveTo(0,0);
+        ctx2.lineTo(100,50);
+        ctx2.stroke();
+        // 绘制myCanvasLine2
+        var c3=document.getElementById('myCanvasLine2');
+        var ctx3=c3.getContext('2d');
+        ctx3.beginPath();
+        ctx3.arc(90,60,50,0,2*Math.PI);
+        ctx3.stroke();
+
+
+
+
+        // 绘制myCanvasText
+        //绘制myCanvasText1
+        var c4=document.getElementById("myCanvasText1");
+        var ctx4=c4.getContext("2d");
+        ctx4.font="40px Arial";
+        ctx4.fillText("Hello World",10,50);      
+        //绘制myCanvasText2
+        var c5=document.getElementById("myCanvasText2");
+        var ctx5=c5.getContext("2d");
+        ctx5.font="40px Arial";
+        ctx5.strokeText("Hello World",10,50);
+
+
+        //绘制myCanvasImage
+        //绘制myCanvasImage1
+        //myCanvasImage1 使用图像绘图
+        var c6=document.getElementById('myCanvasImage1');
+        var ctx6=c6.getContext('2d');
+        var img=document.getElementById('img1');
+        var pat=ctx6.createPattern(img,"repeat");
+        ctx6.fillStyle=pat;
+        ctx6.fillRect(10,10,280,280);
+        //绘制myCanvasImage2
+        //绘制myCanvasImage2 使用图像绘图
+        var c7=document.getElementById('myCanvasImage2');
+        var ctx7=c7.getContext('2d');
+        var img2=document.getElementById("img1");
+        ctx7.drawImage(img2,10,10);
+
+
+        (function(window,factory){if(typeof define==="function"&&define.amd){define(factory)}else{if(typeof module==="object"&&module.exports){module.exports=factory()}else{window.waterWave=factory()}}}(typeof window!=="undefined"?window:this,function(selector,userOptions){var waterWave=function(selector,userOptions){var options={cW:1360,cH:700,baseY:350,oneColor:"#6ca0f6",twoColor:"#367aec",vertexsNum:250,autoDiff:1000,isMouseWhell:true,isDrop:true,dropRadius:3,dropLocation:500,dropAcce:0.015,isShowTips:true};var canvas=null,ctx=null,W=null,H=null,vertexes=[],diffPt=[],autoDiff=1000,vPos=null,dd=15,rainDropNew=null;var mergeOptions=function(userOptions,options){Object.keys(userOptions).forEach(function(key){options[key]=userOptions[key]})};function Vertex(x,y,baseY){this.baseY=baseY;this.x=x;this.y=y;this.vy=0;this.targetY=0;this.friction=0.15;this.deceleration=0.95}Vertex.prototype.updateY=function(diffVal){this.targetY=diffVal+this.baseY;this.vy+=(this.targetY-this.y);this.vy*=this.deceleration;this.y+=this.vy*this.friction};function rainDrop(radius,color){this.x=0;this.y=0;this.vx=0;this.vy=0;this.radius=radius;this.scaleX=1;this.scaleY=1;this.color=color}rainDrop.prototype.draw=function(ctx){ctx.save();ctx.translate(this.x,this.y);ctx.rotate(this.rotation);ctx.scale(this.scaleX,this.scaleY);ctx.fillStyle=this.color;ctx.beginPath();ctx.arc(0,0,this.radius,0,Math.PI*2,false);ctx.closePath();ctx.fill();ctx.restore()};var makeRainDrop=function(){rainDropNew=new rainDrop(options.dropRadius,options.oneColor);rainDropNew.x=options.dropLocation;rainDropNew.y=0;rainDropNew.vy=0};var moveDrop=function(rainDropNew){rainDropNew.vy+=options.dropAcce;rainDropNew.y+=rainDropNew.vy;if(rainDropNew.y>options.cH-options.baseY){rainDropNew.y=0;rainDropNew.vy=0;vPos=1+Math.floor((options.vertexsNum-2)*rainDropNew.x/W);autoDiff=options.autoDiff;diffPt[vPos]=autoDiff;rainDropNew.y=0;rainDropNew.vy=0}rainDropNew.draw(ctx)};var makeLiquaid=function(ctx){ctx.save();ctx.fillStyle=options.oneColor;ctx.beginPath();ctx.moveTo(0,options.cH);ctx.lineTo(vertexes[0].x,vertexes[0].y);for(var i=1;i<vertexes.length;i++){ctx.lineTo(vertexes[i].x,vertexes[i].y)}ctx.lineTo(options.cW,options.cH);ctx.lineTo(0,options.cH);ctx.fill();ctx.restore();ctx.save();ctx.fillStyle=options.twoColor;ctx.beginPath();ctx.moveTo(0,options.cH);ctx.lineTo(vertexes[0].x,vertexes[0].y+5);for(var i=1;i<vertexes.length;i++){ctx.lineTo(vertexes[i].x,vertexes[i].y+5)}ctx.lineTo(options.cW,options.cH);ctx.lineTo(0,options.cH);ctx.fill();ctx.restore();if(options.isShowTips){ctx.save();ctx.fillStyle="#777";ctx.font="12px sans-serif";ctx.textBaseline="top";ctx.fillText("点 击 液 体 表 面",70,(options.cH-options.baseY)-20);ctx.fillStyle="#fff";ctx.fillText("滑 动 滚 轮 改 变 液 体 粘 度",70,(options.cH-options.baseY)+15);ctx.fillText("滚轮改变粘稠度 / Viscosity: "+((dd-15)*20/7).toFixed(2)+"%",options.cW/2.5,options.cH-50);ctx.restore()}};var update=function(){autoDiff-=autoDiff*0.9;diffPt[vPos]=autoDiff;for(var i=vPos-1;i>0;i--){var d=vPos-i;if(d>dd){d=dd}diffPt[i]-=(diffPt[i]-diffPt[i+1])*(1-0.02*d)}for(var i=vPos+1;i<options.vertexsNum;i++){var d=i-vPos;if(d>dd){d=dd}diffPt[i]-=(diffPt[i]-diffPt[i-1])*(1-0.02*d)}for(var i=0;i<options.vertexsNum;i++){vertexes[i].updateY(diffPt[i])}};var mouseInteract=function(ele){ele.addEventListener("mousedown",function(e){var mouse={x:null,y:null};if(e.pageX||e.pageY){mouse.x=e.pageX;mouse.y=e.pageY}else{mouse.x=e.clientX+document.body.scrollLeft+document.documentElement.scrollLeft;mouse.y=e.clientY+document.body.scrollTop+document.documentElement.scrollTop}if(mouse.y>((options.cH-options.baseY)-50)&&mouse.y<((options.cH-options.baseY)+50)){autoDiff=options.autoDiff;vPos=1+Math.floor((options.vertexsNum-2)*mouse.x/options.cW);diffPt[vPos]=autoDiff}},false)};var wheelHandler=function(e){var s=(e.detail)?-e.detail:e.wheelDelta;s>0?(dd>15?dd--:dd=dd):(dd<50?dd++:dd=dd)};var initSetup=function(selector,userOptions){mergeOptions(userOptions,options);canvas=document.getElementById(selector);ctx=canvas.getContext("2d");canvas.width=W=options.cW;canvas.height=H=options.cH;vPos=options.vertexsNum/2;for(var i=0;i<options.vertexsNum;i++){vertexes[i]=new Vertex(options.cW/(options.vertexsNum-1)*i,options.cH-options.baseY,options.cH-options.baseY);diffPt[i]=0}mouseInteract(canvas);if(options.isMouseWhell){window.addEventListener("mousewheel",wheelHandler)}if(options.isDrop){makeRainDrop()}(function drawFrame(){window.requestAnimationFrame(drawFrame);ctx.clearRect(0,0,W,H);if(options.isDrop){moveDrop(rainDropNew)}update();makeLiquaid(ctx)}())};initSetup(selector,userOptions)};return waterWave}))
+        //instance
+        waterWave('canvas', {
+            cW: 2000,
+            cH: 600,
+            
+            //页面 
+            baseY: 250,
+            
+            //上层颜色  
+            oneColor: "#6ca0f6",
+            
+            //下层颜色
+            twoColor: "#367aec",
+            
+            //顶点数目
+            vertexsNum: 250,
+            
+            //初始浪高
+            autoDiff: 1000,
+            
+            //是否支持滚轮滚动
+            isMouseWhell: false,
+            
+            //是否来个雨滴
+            isDrop: true,
+            
+            //雨滴半径
+            dropRadius: 5,
+            
+            //雨滴位置
+            dropLocation: 1000,
+            
+            //雨滴下落加速度
+            dropAcce: 0.02,
+            
+            //是否显示提示
+            isShowTips: true
+        })
+    </script>
+
+</body>
+</html>
