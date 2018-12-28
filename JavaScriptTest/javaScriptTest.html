@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript学习文档</title>
+    
+</head>
+<body>
+    <div>
+        <p id="demoID1">我是一段普通文字</p>
+        <p class="demoClass1">我是一段普通文字</p>
+        <p name="demoName1">我是一段普通文字</p>
+        <p name="timeName1">我是一段普通文字</p>
+        <p id="myvar1">我是一段普通的文字</p>
+        <p id="myvar2">我是一段普通的文字</p>
+        <p id="myvar3">我是一段普通的文字</p>
+        <p id="myvar4">我是一段普通的文字</p>
+        <p id="myvar5">我是一段普通的文字</p>
+    </div>
+    <div>
+        <!-- 事件可以调用js方法 -->
+        <button>点击这里试试</button>
+        <button onclick="myFunfction4(1,4)">点击这里试试</button>
+        <!-- 事件可以使用JS代码 -->
+        <button onclick="this.innerHTML=Date()">点击这里试试</button>
+        <button onclick="document.getElementsByName('timeName1')[0].innerHTML=Date()">点击这里试试</button>
+    </div>
+
+    <div>
+        <!-- 表单验证 -->
+        <form name="myForm1" action="demo_form.php" onsubmit="return validateFunction()">
+            <!-- <p>名字：<input type="text" name="inputName1"></p> -->
+            <p>内容：<input type="text" required></p>
+            <input type="submit" value="提交">
+        </form>
+
+        <form name="myForm2" action="demo_form.php">
+            <!-- <p>名字：<input type="text" name="inputName1"></p> -->
+            <p>内容：<input id="inputid1" type="number" min="100" max="900" name="inputName2" maxLength=3></p><button onclick="validateFunction2()">点击我</button>
+        </form>
+    </div>
+
+    <div>
+        <a href="javascript:void(alert('warning'))">iamalink</a>
+    </div>
+    <script src="./logical.js"></script>
+</body>
+</html>
